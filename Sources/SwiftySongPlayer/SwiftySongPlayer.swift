@@ -12,7 +12,7 @@ import MediaPlayer
 
 /// Interface for playing a queue of songs
 /// - Note: Implemented as a singleton accesible from `SwiftySongPlayer.shared`
-class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
+public class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
 	
 	// MARK: - Properties
 	
