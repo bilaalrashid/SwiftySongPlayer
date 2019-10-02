@@ -12,9 +12,7 @@ import MediaPlayer
 /// Song for use with `SwiftySongPlayer`
 struct Song: Equatable {
 	
-	//
 	// MARK: - Properties
-	//
 	
 	/// Song display name
 	private(set) var name: String? = nil
@@ -34,9 +32,7 @@ struct Song: Equatable {
 	/// Audio settings
 	private(set) var settings: SongSettings
 	
-	//
 	// MARK: - Constructors
-	//
 	
 	/// Creates a new `Song`
 	/// - Parameters:

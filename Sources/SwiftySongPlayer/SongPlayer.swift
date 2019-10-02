@@ -13,9 +13,7 @@ import MediaPlayer
 /// Interface for playing a single audio file
 class SongPlayer {
 	
-	//
 	// MARK: - Properties
-	//
 	
 	/// System audio player
 	private var songPlayer = AVAudioPlayer()
@@ -29,9 +27,7 @@ class SongPlayer {
 	/// Currently loaded song to play
 	private var currentSong: Song?
 	
-	//
 	// MARK: - Public methods
-	//
 	
 	/// Loads a new song into the `AudioPlayer`
 	/// - Parameters:
@@ -158,9 +154,7 @@ class SongPlayer {
 		}
 	}
 	
-	//
 	// MARK: - Private methods
-	//
 	
 	/// Configures the playback mode for the song
 	/// - Parameter mode: Playback mode for the song

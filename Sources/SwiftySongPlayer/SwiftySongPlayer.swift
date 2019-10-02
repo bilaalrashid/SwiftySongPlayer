@@ -14,9 +14,7 @@ import MediaPlayer
 /// - Note: Implemented as a singleton accesible from `SwiftySongPlayer.shared`
 class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
 	
-	//
 	// MARK: - Properties
-	//
 	
 	/// Shared singleton instance
 	static public let shared = SwiftySongPlayer()
@@ -36,16 +34,12 @@ class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
 	/// Have the player controls already been setup
 	private var hasBeenSetup = false
 	
-	//
 	// MARK: - Constructor
-	//
 	
 	/// Prevents an instance being created
 	private override init() {}
 	
-	//
 	// MARK: - Public methods
-	//
 	
 	/// Creates a `SwiftySongPlayer` with optional settings
 	/// - Parameter settings: Optional instance of `SwiftyPlayerSettings` to override default settings
@@ -157,9 +151,7 @@ class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
 		return Array(self.songQueue.dropFirst(self.currentSong))
 	}
 	
-	//
 	// MARK: - Private methods
-	//
 	
 	/// Gets the current song in the queue
 	/// - Returns: The current song in the queue
@@ -286,9 +278,7 @@ class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
 		}
 	}
 	
-	//
 	// MARK: - Delegate methods
-	//
 	
 	/// Plays next song in queue when current song is finished playing
 	/// - Note: Runs when `AVAudioPlayer` finishes playing audio
