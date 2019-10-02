@@ -44,4 +44,5 @@ public struct PlayerSettings {
 	
 	/// Constructor
 	public init() {}
+	
 }
