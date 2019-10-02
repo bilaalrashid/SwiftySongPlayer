@@ -1,5 +1,5 @@
 //
-//  SongPlayer.swift
+//  SingleSongPlayer.swift
 //  SwiftySongPlayer
 //
 //  Created by Bilaal Rashid on 02/07/2019.
@@ -11,7 +11,7 @@ import AVFoundation
 import MediaPlayer
 
 /// Interface for playing a single audio file
-class SongPlayer {
+class SingleSongPlayer {
 	
 	// MARK: - Properties
 	

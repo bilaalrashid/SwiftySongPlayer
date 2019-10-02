@@ -20,7 +20,7 @@ class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
 	static public let shared = SwiftySongPlayer()
 	
 	/// Single audio track player
-	private let audioPlayer = SongPlayer()
+	private let audioPlayer = SingleSongPlayer()
 	
 	/// List of all previously and soon to be played songs
 	private var songQueue: Array<Song> = []
