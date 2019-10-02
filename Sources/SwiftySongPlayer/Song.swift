@@ -41,7 +41,7 @@ public struct Song: Equatable {
 	/// 	- album: Album name
 	/// 	- artwork: Apple Music album artwork
 	/// 	- url: Audio file URL
-	init(name: String?, artist: String?, album: String?, artwork: MPMediaItemArtwork?, url: URL, settings: SongSettings = SongSettings()) {
+	public init(name: String?, artist: String?, album: String?, artwork: MPMediaItemArtwork?, url: URL, settings: SongSettings = SongSettings()) {
 		self.name = name
 		self.artist = artist
 		self.album = album
@@ -57,7 +57,7 @@ public struct Song: Equatable {
 	/// 	- album: Album name
 	/// 	- image: Album artwork image
 	/// 	- url: Audio file URL
-	init(name: String?, artist: String?, album: String?, image: UIImage?, url: URL, settings: SongSettings = SongSettings()) {
+	public init(name: String?, artist: String?, album: String?, image: UIImage?, url: URL, settings: SongSettings = SongSettings()) {
 		self.name = name
 		self.artist = artist
 		self.album = album
@@ -80,7 +80,7 @@ public struct Song: Equatable {
 	/// 	- artwork: Apple Music album artwork
 	/// 	- fileName: Locally bundled audio file name
 	/// 	- fileExt: Locally bundled audio file extension
-	init(name: String?, artist: String?, album: String?, artwork: MPMediaItemArtwork?, fileName: String, fileExt: String, settings: SongSettings = SongSettings()) {
+	public init(name: String?, artist: String?, album: String?, artwork: MPMediaItemArtwork?, fileName: String, fileExt: String, settings: SongSettings = SongSettings()) {
 		self.name = name
 		self.artist = artist
 		self.album = album
@@ -97,7 +97,7 @@ public struct Song: Equatable {
 	/// 	- image: Album artwork image
 	/// 	- fileName: Locally bundled audio file name
 	/// 	- fileExt: Locally bundled audio file extension
-	init(name: String?, artist: String?, album: String?, image: UIImage?, fileName: String, fileExt: String, settings: SongSettings = SongSettings()) {
+	public init(name: String?, artist: String?, album: String?, image: UIImage?, fileName: String, fileExt: String, settings: SongSettings = SongSettings()) {
 		self.name = name
 		self.artist = artist
 		self.album = album
@@ -111,4 +111,5 @@ public struct Song: Equatable {
 		self.url = URL.init(fileURLWithPath: Bundle.main.path(forResource: fileName, ofType: fileExt)!)
 		self.settings = settings
 	}
+	
 }
