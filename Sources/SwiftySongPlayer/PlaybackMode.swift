@@ -9,7 +9,7 @@
 import Foundation
 
 /// Routing mode for playing audio
-enum PlaybackMode {
+public enum PlaybackMode {
 	/// Routes audio to system default route e.g. bluetooth speaker
 	case normal
 	

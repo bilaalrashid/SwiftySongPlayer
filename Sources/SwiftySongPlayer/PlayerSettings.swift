@@ -9,31 +9,39 @@
 import Foundation
 
 /// Optional settings for `SwiftySongPlayer`
-struct PlayerSettings {
+public struct PlayerSettings {
+	
+	// MARK: - Properties
+	
 	/// Toggle to enable OS control center play button
-	var playEnabled = true
+	public var playEnabled = true
 	
 	/// Toggle to enable OS control center pause button
-	var pauseEnabled = true
+	public var pauseEnabled = true
 	
 	/// Toggle to enable OS control center skip to next track button
-	var nextTrackEnabled = true
+	public var nextTrackEnabled = true
 	
 	/// Toggle to enable OS control center skip to previous track button
-	var previousTrackEnabled = true
+	public var previousTrackEnabled = true
 	
 	/// Toggle to enable OS control center fast forward button
-	var fastForwardEnabled = false
+	public var fastForwardEnabled = false
 	
 	/// Toggle to enable OS control center rewind button
-	var rewindEnabled = false
+	public var rewindEnabled = false
 	
 	/// Toggle to enable scrubbing in OS control center playback progress bar
-	var scrubBarEnabled = true
+	public var scrubBarEnabled = true
 	
 	/// Toggle to enable `NotificationCenter` notification when control center player controls are used
-	var updatePlaybackNotificationEnabled = false
+	public var updatePlaybackNotificationEnabled = false
 	
 	/// Toggle to enable the next song in the queue to be played when the previous song finishes
-	var autoStartNextTrackEnabled = true
+	public var autoStartNextTrackEnabled = true
+	
+	// MARK: - Constructor
+	
+	/// Constructor
+	public init() {}
 }

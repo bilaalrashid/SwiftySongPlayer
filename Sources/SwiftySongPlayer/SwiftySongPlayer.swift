@@ -283,7 +283,7 @@ public class SwiftySongPlayer: NSObject, AVAudioPlayerDelegate {
 	/// Plays next song in queue when current song is finished playing
 	/// - Note: Runs when `AVAudioPlayer` finishes playing audio
 	/// - Note: Public scope is required for `AVAudioPlayerDelegate` to access it
-	func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+	public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
 		if flag == true {
 			controlCenterUsed()
 			self.audioPlayer.updateNowPlayingInfo()

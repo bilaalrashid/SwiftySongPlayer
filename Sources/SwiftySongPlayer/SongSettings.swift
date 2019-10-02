@@ -9,7 +9,7 @@
 import Foundation
 
 /// Optional settings for a `Song` played in a `SwiftySongPlayer`
-struct SongSettings: Equatable {
+public struct SongSettings: Equatable {
 	/// Routing mode for playing audio
 	var mode: PlaybackMode = .normal
 }

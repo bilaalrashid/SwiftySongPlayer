@@ -10,7 +10,7 @@ import Foundation
 import MediaPlayer
 
 /// Song for use with `SwiftySongPlayer`
-struct Song: Equatable {
+public struct Song: Equatable {
 	
 	// MARK: - Properties
 	
