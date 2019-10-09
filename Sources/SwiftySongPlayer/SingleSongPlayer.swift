@@ -16,7 +16,7 @@ class SingleSongPlayer {
 	// MARK: - Properties
 	
 	/// System audio player
-	private var songPlayer = AVAudioPlayer()
+	private var songPlayer: AVAudioPlayer!
 	
 	/// Tracks when the loaded song has been paused
 	private var isSongPaused = false
