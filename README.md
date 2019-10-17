@@ -25,8 +25,49 @@ Since there can only be one channel of audio playing at a time in an app, the li
 
 Before using the library, `public func setup(settings: PlayerSettings = PlayerSettings())` must be called. It can be called multiple times without any side effects, although it will not update the player settings for the song player.
 
-Basic playback controls can be called using `public func addSong(song: Song)`, `public func playQueue() throws`, `public func pauseQueue()`, `public func resumeQueue()` and `public func clearQueue()`. Note that `resumeQueue()` will resume playback of the queue at the time position when paused and should be used in favour of `playQueue()` when resuming playback, which will restart the current song.
+Basic playback controls:
 
-Advanced playback controls include `public func skipForwardsInQueue(by amount: Int) throws`, `public func skipBackwardsInQueue(by amount: Int) throws`, `public func fastFordwardPlayingSong(by amount: Double)`, `public func rewindPlayingSong(by amount: Double)` and `public func seekToPositionInPlayingSong(position: Double)`.
+```swift
+public func addSong(song: Song)
+```
+```swift
+public func playQueue() throws
+```
+```swift
+public func pauseQueue()
+```
+```swift
+public func resumeQueue()
+```
+```swift
+public func clearQueue()
+```
+Note that `resumeQueue()` will resume playback of the queue at the time position when paused and should be used in favour of `playQueue()` when resuming playback, which will restart the current song.
 
-Additionally, `public func isPlaying() -> Bool`, `public func getCurrentSongPlaybackPosition() -> Double` and `public func getAllSongsToPlay() -> [Song]` are also available to query the song player.
+Advanced playback controls:
+```swift
+public func skipForwardsInQueue(by amount: Int) throws
+```
+```swift
+public func skipBackwardsInQueue(by amount: Int) throws
+```
+```swift
+public func fastFordwardPlayingSong(by amount: Double)
+```
+```swift
+public func rewindPlayingSong(by amount: Double)
+```
+```swift
+public func seekToPositionInPlayingSong(position: Double)
+```
+
+Accessors:
+```swift
+public func isPlaying() -> Bool
+```
+```swift
+public func getCurrentSongPlaybackPosition() -> Double
+```
+```swift
+public func getAllSongsToPlay() -> [Song]
+```
